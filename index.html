@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c1119" />
+    <meta name="google-adsense-account" content="ca-pub-2096242776990164" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2096242776990164" crossorigin="anonymous"></script>
+    <meta name="description" content="Campetto: profili NBA, statistiche, highlights e fantabasket." />
+    <title>Campetto — NBA, senza perdere un possesso</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="app-overrides.css?v=20261108a" />
+    <link rel="stylesheet" href="campetto-preferences.css?v=20261109profile" />
+    <script src="campetto-translations.js?v=20261108hearts"></script>
+    <script src="campetto-preferences.js?v=20261109languages"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#home" aria-label="Campetto home">
+          <span class="brand-mark">C<span>+</span></span>
+          <span class="brand-name">cam<span>petto</span><small>NBA, senza perdere un possesso</small></span>
+        </a>
+        <div class="side-label">MENU</div>
+        <nav class="main-nav" aria-label="Navigazione principale">
+          <button class="nav-link active" data-view="home"><span class="nav-icon">⌂</span> Panoramica</button>
+          <button class="nav-link" data-view="players"><span class="nav-icon">◎</span> Giocatori <span class="nav-count" id="player-count">15</span></button>
+          <button class="nav-link" data-view="teams"><span class="nav-icon">◉</span> Squadre</button>
+          <button class="nav-link" data-view="leaders"><span class="nav-icon">↗</span> Statistiche</button>
+          <button class="nav-link" data-view="cards"><span class="nav-icon">▧</span> Carte NBA</button>
+          <button class="nav-link" data-view="games"><span class="nav-icon">▣</span> Partite</button>
+          <button class="nav-link" data-view="standings"><span class="nav-icon">▥</span> Classifica</button>
+          <button class="nav-link" data-view="fantasy"><span class="nav-icon">♟</span> Fantabasket <span class="nav-new">FREE</span></button>
+          <button class="nav-link" data-view="news"><span class="nav-icon">▤</span> News</button>
+        </nav>
+        <div class="sidebar-rule"></div>
+        <div class="side-label side-label-row">LA MIA SQUADRA <span>⌄</span></div>
+        <button class="nav-link" data-view="favorites"><span class="nav-icon">♡</span> Giocatori seguiti <span class="nav-count" id="favorite-count">0</span></button>
+        <button class="nav-link" data-view="fantasy"><span class="nav-icon">◉</span> Il mio quintetto</button>
+        <div class="sidebar-spacer"></div>
+        <div class="league-card">
+          <span class="league-ball">◉</span>
+          <div><b>Fantabasket gratis</b><span>Forma la rosa e segui<br />la classifica della lega.</span></div>
+          <button data-view="fantasy">Crea il tuo quintetto <span>→</span></button>
+          <div class="league-glow"></div>
+        </div>
+        <div class="sidebar-foot"><span class="status-dot"></span> NBA 2026/27 <span>·</span> Rosa live</div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobile-menu" aria-label="Apri menu">☰</button>
+          <div class="breadcrumb"><span>NBA</span><i>/</i><strong id="breadcrumb-current">Panoramica</strong></div>
+          <div class="topbar-actions">
+            <div class="search-box" role="search"><button class="search-toggle" type="button" aria-label="Cerca giocatori e squadre">⌕</button><input id="global-search" type="search" aria-label="Cerca un giocatore o una squadra" role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false" placeholder="Cerca un giocatore, una squadra..." autocomplete="off" /><kbd>Ctrl K</kbd><div id="search-results" class="search-results" role="listbox" aria-label="Risultati ricerca"></div></div>
+            <button class="icon-button notification-button" aria-label="Notifiche"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button>
+            <button class="profile-button" id="account-button"><span class="avatar-mini">CS</span><span>Il mio profilo</span><b>⌄</b></button>
+          </div>
+        </header>
+        <div class="view-root" id="view-root"></div>
+        <aside id="campetto-ad-slot" class="campetto-ad-slot" aria-label="Pubblicità" data-no-translate hidden><small class="campetto-ad-label" hidden>Pubblicità</small><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2096242776990164" data-ad-slot="5309569287" data-ad-format="auto" data-full-width-responsive="true"></ins></aside>
+        <footer class="site-footer"><span>CAMPETTO <b>·</b> Un progetto per chi vive di basket.</span><span>Rosa, statistiche stagionali, notizie e risultati dipendono dalla disponibilità del feed ESPN.</span><nav class="footer-legal" aria-label="Informazioni sul sito"><a href="privacy.html">Privacy e cookie</a><button type="button" class="cookie-settings" data-cookie-settings hidden>Gestisci cookie</button><a href="contatti.html">Chi siamo e contatti</a></nav></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="campetto-news-it.js?v=20261109languages"></script>
+    <script src="campetto-league.js"></script>
+    <script src="campetto-draft.js"></script>
+    <script src="app.js?v=20261108hearts"></script>
+    <script src="campetto-news-languages.js"></script>
+    <script src="supabase-config.js"></script>
+    <script src="campetto-upgrades.js?v=20261109profile"></script>
+    <script src="campetto-player-details.js"></script>
+    <script src="campetto-play.js"></script>
+    <script src="campetto-night.js"></script>
+    <script src="campetto-standings.js"></script>
+    <script src="campetto-following.js"></script>
+    <script src="campetto-fantasy-trends.js"></script>
+    <script src="campetto-profile.js"></script>
+    <script src="campetto-mvp.js"></script>
+    <script src="campetto-calendar.js"></script>
+    <script src="campetto-ads.js"></script>
+  </body>
+</html>
